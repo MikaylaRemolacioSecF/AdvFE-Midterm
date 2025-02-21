@@ -70,16 +70,15 @@ export default function PickPokemon() {
   return (
     <div style={{ textAlign: "center", padding: "20px", backgroundColor: '#B6D0E2', color:'blue' }}>
         <h1>Pick Your Pokémon</h1>
-        <p>Filter Pokémon by type and select your starter!</p>
+        <p>Filter Pokémon by type and select your starter!</p><br />
 
         {/* Filter Section */}
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-            <h3>Filter Pokémon by Type</h3>
             {/* Dropdown to filter by type */}
             <select 
               onChange={(e) => handleTypeFilter(e.target.value)} 
               value={selectedType} 
-              style={{ padding: '10px', fontSize: '16px', borderRadius: '5px' }}
+              style={{ padding: '10px', fontSize: '16px', borderRadius: '5px', backgroundColor: 'yellow', border: '2px blue solid', color: 'blue' }}
             >
                 <option value="all">All Types</option>
                 {types.map((type) => (
